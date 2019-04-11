@@ -10,4 +10,5 @@ public class lobbyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lobby);
     }
+    //I added this commented out line in LobbyActivity
 }
