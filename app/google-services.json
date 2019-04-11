@@ -1,42 +1,42 @@
 {
   "project_info": {
-    "project_number": "189244613997",
-    "firebase_url": "https://rockpaperscissor-22ae7.firebaseio.com",
-    "project_id": "rockpaperscissor-22ae7",
-    "storage_bucket": "rockpaperscissor-22ae7.appspot.com"
+    "project_number": "199540761480",
+    "firebase_url": "https://rockpaperscissors-89bad.firebaseio.com",
+    "project_id": "rockpaperscissors-89bad",
+    "storage_bucket": "rockpaperscissors-89bad.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:189244613997:android:ed74aa2d32ed7cc3",
+        "mobilesdk_app_id": "1:199540761480:android:0d67260f25298080",
         "android_client_info": {
-          "package_name": "edu.fsu.cs.mobile.rockpaperscissor"
+          "package_name": "mobile.cs.fsu.edu"
         }
       },
       "oauth_client": [
         {
-          "client_id": "189244613997-fts30akhm84tbmh86hv64njk2e1j9s87.apps.googleusercontent.com",
+          "client_id": "199540761480-ccubelkra79mrnsdg7ml7a2vits52rla.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "edu.fsu.cs.mobile.rockpaperscissor",
-            "certificate_hash": "3f3bf28104d865b7ac882e02ee46faa1f3c45d16"
+            "package_name": "mobile.cs.fsu.edu",
+            "certificate_hash": "ba2a281024a0e78c1bf66bb7ccbc76d26a57b7ed"
           }
         },
         {
-          "client_id": "189244613997-t4hnqq337075cjdbrsq6fk5gnn0gsr4r.apps.googleusercontent.com",
+          "client_id": "199540761480-g06koo669eh0kulq2govqfkpbv2ippec.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBAAUdGA0OvKwGJDNqZWgOEieeSCSmZWTs"
+          "current_key": "AIzaSyDIIlbkfTRNjqjEoyVziDf3jB2bvcEqUAE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "189244613997-t4hnqq337075cjdbrsq6fk5gnn0gsr4r.apps.googleusercontent.com",
+              "client_id": "199540761480-g06koo669eh0kulq2govqfkpbv2ippec.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
