@@ -8,17 +8,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:199540761480:android:0d67260f25298080",
+        "mobilesdk_app_id": "1:199540761480:android:ed74aa2d32ed7cc3",
         "android_client_info": {
-          "package_name": "mobile.cs.fsu.edu"
+          "package_name": "edu.fsu.cs.mobile.rockpaperscissor"
         }
       },
       "oauth_client": [
         {
-          "client_id": "199540761480-ccubelkra79mrnsdg7ml7a2vits52rla.apps.googleusercontent.com",
+          "client_id": "199540761480-3di1nonds4kjtss13dc8lgtcjte7tvrq.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "mobile.cs.fsu.edu",
+            "package_name": "edu.fsu.cs.mobile.rockpaperscissor",
             "certificate_hash": "ba2a281024a0e78c1bf66bb7ccbc76d26a57b7ed"
           }
         },
