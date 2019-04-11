@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "189244613997",
+    "firebase_url": "https://rockpaperscissor-22ae7.firebaseio.com",
+    "project_id": "rockpaperscissor-22ae7",
+    "storage_bucket": "rockpaperscissor-22ae7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189244613997:android:ed74aa2d32ed7cc3",
+        "android_client_info": {
+          "package_name": "edu.fsu.cs.mobile.rockpaperscissor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189244613997-fts30akhm84tbmh86hv64njk2e1j9s87.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.fsu.cs.mobile.rockpaperscissor",
+            "certificate_hash": "3f3bf28104d865b7ac882e02ee46faa1f3c45d16"
+          }
+        },
+        {
+          "client_id": "189244613997-t4hnqq337075cjdbrsq6fk5gnn0gsr4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAAUdGA0OvKwGJDNqZWgOEieeSCSmZWTs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189244613997-t4hnqq337075cjdbrsq6fk5gnn0gsr4r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
