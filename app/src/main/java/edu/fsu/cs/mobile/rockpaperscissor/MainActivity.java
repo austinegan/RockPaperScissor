@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main);
         Intent i = new Intent(this, LoginActivity.class);
         startActivity(i);
+        //A comment to indicate that a new push is made from my laptop
     }
 
 }
