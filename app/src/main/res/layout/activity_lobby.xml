@@ -34,11 +34,11 @@
         android:layout_marginTop="340dp"
         android:layout_marginLeft="170dp"/>
 
-    <android.support.v7.widget.AppCompatImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="390dp"
-        app:srcCompat="@drawable/lobby"/>
+    <!--<android.support.v7.widget.AppCompatImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="390dp"-->
+        <!--app:srcCompat="@drawable/lobby"/>-->
 
     <TextView
         android:id="@+id/textView3"

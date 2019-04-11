@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.Auth;
@@ -27,6 +28,9 @@ public class LoginActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        final TextView loginFieldUser = findViewById(R.id.login_user);
+        final TextView loginFieldPass = findViewById(R.id.login_pass);
+
         Button login;
         login = findViewById(R.id.login);
         login.setOnClickListener(new View.OnClickListener(){
@@ -34,6 +38,8 @@ public class LoginActivity extends AppCompatActivity  {
                 //check that the username and password are correct, if not, exit this onclick, toast that they are not correct
                 //Toast.makeText(getApplicationContext(), "I'm in the onClick for the login button", Toast.LENGTH_LONG).show();\
                 Log.i("AUSTIN", "login button clicked");
+                String loginUserValue = loginFieldUser.getText().toString();
+                String loginPassValue = loginFieldPass.getText().toString();
                 Intent i = new Intent(getApplicationContext(), PlayActivity.class);
                 startActivity(i);
             }
