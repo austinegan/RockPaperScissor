@@ -10,7 +10,7 @@ Austin Egan: Firebase, Sensors, LoginActivity
 Harrison Hill: Game Activities, LobbyActivity, PlayActivity, 
 David Song: Presentation, Game Activities, Images/Design
 Kevin Williams: Sensor, PlayActivity, LobbyActivity
-Kimberly Zappa: Designed all layout files, integrated layout data into jave files, worked with Harris to implement CPU play. 
+Kimberly Zappa: Designed all layout files, integrated layout data into java files, worked with Harris to implement CPU play. 
 
 Known Errors-
 Firebase does not function, can't store and retrieve data. (spent multiple days working on it, couldn't figure out why)
