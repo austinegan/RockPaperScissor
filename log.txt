@@ -1,6 +1,6 @@
 Log of nonfunctioning code:
 
-//Attempted Firebase code (google play button)
+//Attempted Firebase code (google play button) by Kimberly Zappa
 
 package edu.fsu.cs.mobile.rockpaperscissor;
 
