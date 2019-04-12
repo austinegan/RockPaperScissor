@@ -8,6 +8,8 @@ public class Match {
     String lobbyName;
     String winnerIdentifier;
 
+    public Match(){}
+
     public Match(String p1Identifier, String p2Identifier, int p1Choice, int p2Choice, String lobbyName) {
         this.p1Identifier = p1Identifier;
         this.p2Identifier = p2Identifier;

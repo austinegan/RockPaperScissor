@@ -3,13 +3,18 @@ package edu.fsu.cs.mobile.rockpaperscissor;
 public class User {
     String name;
     String password;
+    String userID;
     int wins;
     int losses;
     int ties;
 
-    public User(String name, String password, int wins, int losses, int ties) {
+    public User(){}
+
+
+    public User(String name, String password, String userID, int wins, int losses, int ties) {
         this.name = name;
         this.password = password;
+        this.userID = userID;
         this.wins = wins;
         this.losses = losses;
         this.ties = ties;
@@ -53,5 +58,13 @@ public class User {
 
     public void setTies(int ties) {
         this.ties = ties;
+    }
+
+    public String getUserID() {
+        return userID;
+    }
+
+    public void setUserID(String userID) {
+        this.userID = userID;
     }
 }
