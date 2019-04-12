@@ -28,6 +28,8 @@ public class lobbyActivity extends AppCompatActivity {
     }
 
     public void exitPlay(View view) {
-        startActivity(new Intent(lobbyActivity.this, LoginActivity.class));
+        moveTaskToBack(true);
+        android.os.Process.killProcess(android.os.Process.myPid());
+        System.exit(1);
     }
 }
