@@ -6,11 +6,11 @@ Members: Austin Egan, Harrison Hill, David Song, Kevin Williams, Kimberly Zappa
 
 
 Work Log-
-Austin Egan: Firebase, Leaderboard, Sensors, PlayActivity
+Austin Egan: Firebase, Sensors, LoginActivity
 Harrison Hill: Game Activities, LobbyActivity, PlayActivity, 
 David Song: Presentation, Game Activities, Images/Design
 Kevin Williams: Sensor, PlayActivity, LobbyActivity
-Kimberly Zappa: Firebase, LoginActivity, Images/Design, Leaderboard
+Kimberly Zappa: Designed all layout files, integrated layout data into jave files, worked with Harris to implement CPU play. 
 
 Known Errors-
 Firebase does not function, can't store and retrieve data. (spent multiple days working on it, couldn't figure out why)
