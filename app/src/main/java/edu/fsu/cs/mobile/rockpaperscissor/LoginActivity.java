@@ -75,7 +75,7 @@ public class LoginActivity extends AppCompatActivity  {
                 String loginPassValue = loginFieldPass.getText().toString();
                 Log.i("AUSTIN", "Username = " + loginUserValue);
                 Log.i("AUSTIN", "Password = " + loginPassValue);
-                Intent i = new Intent(getApplicationContext(), PlayActivity.class);
+                Intent i = new Intent(getApplicationContext(), lobbyActivity.class);
                 startActivity(i);
             }
         });
@@ -104,7 +104,7 @@ public class LoginActivity extends AppCompatActivity  {
 //                myRef.child("Users").setValue(thisUser);
 
                 myRef.child("users").push().setValue(thisUser);                   //child(registerUserValue).setValue(thisUser);
-                Intent i = new Intent(getApplicationContext(), PlayActivity.class);
+                Intent i = new Intent(getApplicationContext(), lobbyActivity.class);
                 startActivity(i);
             }
         });

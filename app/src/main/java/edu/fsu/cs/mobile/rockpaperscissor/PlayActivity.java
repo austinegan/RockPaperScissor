@@ -17,7 +17,7 @@ import android.widget.Toast;
 import java.util.Random;
 
 
-public class PlayActivity extends AppCompatActivity implements SensorEventListener{
+public class PlayActivity extends AppCompatActivity implements SensorEventListener {
 
     static public boolean human = true;
     private Bundle bundle;
@@ -30,6 +30,7 @@ public class PlayActivity extends AppCompatActivity implements SensorEventListen
     private RadioButton cRock;
     private RadioButton cPaper;
     private RadioButton cScissors;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,67 +59,63 @@ public class PlayActivity extends AppCompatActivity implements SensorEventListen
         //}
 
     }
-    public void onResume(){
+
+    public void onResume() {
         super.onResume();
         sensorManager.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_NORMAL);
     }
 
-    public void onPause(){
+    public void onPause() {
         super.onPause();
         sensorManager.unregisterListener(this);
     }
 
     @Override
-    public void onAccuracyChanged(Sensor sensor, int accuracy){
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
 
     }
 
     @Override
-    public void onSensorChanged(SensorEvent event){
+    public void onSensorChanged(SensorEvent event) {
         avgAccel = (Math.abs(event.values[0]) + Math.abs(event.values[1]) + Math.abs(event.values[2])) / 3;
-        if (avgAccel > threshold){
+        if (avgAccel > threshold) {
             //check which choice is selected and push it to match up with the other user
 
             //replace this to work with whatever user selection method we use
             int selectedId = throwChoices.getCheckedRadioButtonId();
             RadioButton playerChoice = (RadioButton) findViewById(selectedId);
 
-            if (playerChoice == cRock){
+            if (playerChoice == cRock) {
                 //return 0 to PlayActivity
-            }
-            else if (playerChoice == cPaper){
+            } else if (playerChoice == cPaper) {
                 //return 1 to PlayActivity
-            }
-            else if (playerChoice == cScissors){
+            } else if (playerChoice == cScissors) {
                 //return 2 to PlayActivity
             }
         }
     }
+
     int getRandomThrow() {
         Random randomGenerator = new Random();
         return randomGenerator.nextInt(3);
     }
 
 
-
     //returns 1 for player 1 winner, returns 2 for player 2 winner, return 0 for tie
     int getWinner(int p1move, int p2move) {
         if (p1move == p2move) return 0;
         //rock
-        if (p1move == 0)
-        {
+        if (p1move == 0) {
             if (p2move == 1) return 1;
             else return 2;
         }
         //paper
-        if (p1move == 1)
-        {
+        if (p1move == 1) {
             if (p2move == 0) return 1;
             else return 2;
         }
         //scissors
-        if (p1move == 2)
-        {
+        if (p1move == 2) {
             if (p2move == 1) return 1;
             else return 2;
         }
@@ -126,29 +123,24 @@ public class PlayActivity extends AppCompatActivity implements SensorEventListen
         //The code will never reach this point but java doesn't know that so it was yelling at me
         return 0;
     }
+
     //pass this function the winner of the game to make an appropriate toast,
     //preferably through [ winnerToast(getWinner(player1Move, player2Move)) ]
 //or                 [ winnerToast(getWinner(player1Move, getRandomThrow()))  ]
-    void winnerToast(int winner)
-    {
+    void winnerToast(int winner) {
         Log.d("debug", "inside winnerToast");
-        if (winner == 1)
-        {
+        if (winner == 1) {
             Log.d("debug", "winner was 1, printing toast");
-            Toast toast=Toast.makeText(getApplicationContext(),"Player 1 is the winner!", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(getApplicationContext(), "Player 1 is the winner!", Toast.LENGTH_SHORT);
             toast.show();
-        }
-        else if (winner == 2)
-        {
+        } else if (winner == 2) {
             Log.d("debug", "winner was 1, printing toast");
-            Toast toast=Toast.makeText(getApplicationContext(),"Player 2 is the winner!", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(getApplicationContext(), "Player 2 is the winner!", Toast.LENGTH_SHORT);
             toast.show();
-        }
-        else
-        {
+        } else {
 
             Log.d("debug", "winner was 1, printing toast");
-            Toast toast=Toast.makeText(getApplicationContext(),"Draw!", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(getApplicationContext(), "Draw!", Toast.LENGTH_SHORT);
             toast.show();
         }
     }
@@ -163,9 +155,8 @@ public class PlayActivity extends AppCompatActivity implements SensorEventListen
     public void KevinsThingyTest(View view) {
         //this code will run inside the sensor listener
         RadioGroup rg = findViewById(R.id.throwChoices);
-        if (rg.getCheckedRadioButtonId() == -1)
-        {
-            Toast toast=Toast.makeText(getApplicationContext(),"You need to choose a throw!", Toast.LENGTH_SHORT);
+        if (rg.getCheckedRadioButtonId() == -1) {
+            Toast toast = Toast.makeText(getApplicationContext(), "You need to choose a throw!", Toast.LENGTH_SHORT);
             toast.show();
             return;
         }
@@ -177,16 +168,12 @@ public class PlayActivity extends AppCompatActivity implements SensorEventListen
 
         int chosenThrow = -1;
 
-        if (rb.getId() == R.id.radioButton_rock)
-        {
+        if (rb.getId() == R.id.radioButton_rock) {
             chosenThrow = 0;
         }
-        if (rb.getId() == R.id.radioButton_paper)
-        {
+        if (rb.getId() == R.id.radioButton_paper) {
             chosenThrow = 1;
-        }
-        else
-        {
+        } else {
             chosenThrow = 2;
         }
 
@@ -195,8 +182,7 @@ public class PlayActivity extends AppCompatActivity implements SensorEventListen
         //          ^^^^^^
         //  this is what this if statement will look like once we have PvP
 
-        if (true)
-        {
+        if (true) {
             //this should print out the winner
             Log.d("debug", "running winnerToast");
             winnerToast(getWinner(chosenThrow, getRandomThrow()));
@@ -206,13 +192,12 @@ public class PlayActivity extends AppCompatActivity implements SensorEventListen
             //
 
             startActivity(myintent);
-        }
-        else
-        {
+        } else {
             startActivity(myintent);
         }
         return;
     }
+
     public void exitPlay(View view) {
         //player exits game
         //other player automatically wins
