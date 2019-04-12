@@ -26,7 +26,25 @@ Ways we could improve would be to use google maps and find local players. This w
 those around them. Establishing the leaderboard based on number on wins in the user table and amongst their friends. 
 
 
+Firebase planned structure
 
+Users
+	Username - String
+	Password - String
+	Wins - number
+	Ties - number
+	Losses - number
+Matches
+	Username1 - String
+	Username2 - String
+	User1Choice - number
+	User2Choice - number
+	Name of Lobby - String
+
+Matches in Quick play iterate through list of matches until one of two conditions is met : 
+1. A match with only one player is found (in which case the current user is added to said match)
+-or-
+2. The iteration reaches the end of the matches, in which case the current user is placed in a new lobby to wait for their opponent.
 
 
 
